@@ -419,12 +419,13 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items
 
 /* footer start */
 #footer{
-  background: #000000;/*#000,black,rgba(0,0,0,1)*/
-  color: #ffffff;
   font-size: 14px;
+  background: #f1f1f1;/*#000,black,rgba(0,0,0,1)*/
+  color: #202020;
+  border-top : 2px solid #ffe600;
 }
 #footer .footer_top{
-  background: #111111;
+  background: #f9f9f9;
   padding: 60px 0 30px;
 }
 
@@ -461,14 +462,14 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items
   margin: 0 0 20px 0;
   padding: 2px 0 2px 10px;
   letter-spacing: 3px;
-  border-left: 4px solid #18d26e;
+  border-left: 4px solid #0e347e;
 }
 
 #footer .container .row .column h4{
   position: relative;
   font-size: 14px;
   font-weight: 700;/*bold*/
-  color: #ffffff;
+  color: #0e347e;
   text-transform: uppercase;
   padding-bottom: 12px;
   margin-bottom: 20px;
@@ -490,7 +491,7 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items
 
 #footer .container .row .column h4:after{
   width: 60px;
-  background: #18d26e;
+  background: #ffe600;
 }
 
 /*list style*/
@@ -513,11 +514,16 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items
 
 #footer .container .row .column.news input[type=search]{
   border: 0;
-  padding: 6px 8px;
+  padding: 6px;
   width: 65%;
+  height: 30px;
+  border : 1px solid #d9d9d9;
+  box-sizing: border-box;
+  outline : none;
+  background: #f1f1f1;
 }
 #footer .container .row .column.news input[type=submit]{
-  background: #18d26e;
+  background: #0e347e;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -527,7 +533,7 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items
 /* footer end */
 
 /*반응형 style*/
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1160px){
   #footer .container{
     width : 100%;
   }
@@ -539,7 +545,7 @@ section.active .row .column .inner.progressbar .items_wrap:nth-of-type(6) .items
   }
   section .row .column .inner{
     width: 90%;
-    margin : 0 auto;
+    margin : 15px auto;
   }
   section#introduce .row .column .inner img{
     width: 30%;
