@@ -79,7 +79,6 @@ input[type=checkbox]#gnbcheck{ display: none; }
   z-index: 900;
   display: none;
   cursor : pointer;
-  overflow: auto;
 }
 
 /* mobile button line style */
@@ -198,7 +197,12 @@ section .row .column .inner img.shadow{
 section .row .column .inner img.shadow:hover{
   box-shadow: none;
 }
+
 /* section별 style start */
+/* section#intro img */
+section#intro img{
+  width: 100%;
+}
 
 /* section#introduce */
 section#introduce{
