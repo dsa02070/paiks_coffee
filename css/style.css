@@ -26,7 +26,7 @@ gnbbtn : 900;
   box-shadow: 2px 2px 2px rgba(0,0,0,.2);
   /* 노출과 비노출 시 transition */
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 .back_to_top a{
   width: 100%;
@@ -191,7 +191,7 @@ section .row .column .inner img.shadow{
   box-shadow: 2px 2px 2px rgba(0,0,0,.2);
   box-sizing: border-box;
   border: 1px solid #f1f1f1;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 section .row .column .inner img.shadow:hover{
@@ -263,6 +263,11 @@ section#icecream img{
 
 section#icecream img:hover{
   border : 1px solid #c1c1c1;
+}
+
+/* section#signature */
+section#signature .column:hover img{
+  opacity: 0.7;
 }
 
 
