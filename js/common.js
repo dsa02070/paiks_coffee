@@ -2,17 +2,14 @@ $(function () {
   const addTop = 500;
   //script 입력영역
   $("nav ul li a,.back_to_top a,a.button,.footer_top a").click(function () {
-    console.log($(this.hash))
     let thisElem = $(this.hash);
     let offsetElem = thisElem.offset();
-    console.log(offsetElem.top)
     $("html,body").stop();
     $("html,body").animate({ scrollTop: offsetElem.top }, 500);
   });
 
   //scroll 상단 이동버튼 노출/비노출
   $(window).scroll(function () {
-    // console.log($(this).scrollTop())
     if ($(this).scrollTop() == 0) {
       $(".back_to_top").removeClass("on");
     } else {
@@ -22,7 +19,6 @@ $(function () {
 
   //section offset top 값으로 class 추가
   let wHeight = $(window).innerHeight();
-  console.log("window height: " + wHeight)
   $(window).scroll(function () {
     let thisScrollTop = $(this).scrollTop();
     $("section").each(function () {
@@ -33,4 +29,27 @@ $(function () {
     });
   });
 
+  //main banner swiper 
+  var swiper = new Swiper("#intro", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  $('#intro').mouseenter(function () {
+    swiper.autoplay.stop();
+  }).mouseleave(function () {
+    swiper.autoplay.start();
+  })
 });

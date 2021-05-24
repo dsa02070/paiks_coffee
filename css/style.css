@@ -13,20 +13,42 @@ section#myprofile:before : 9;
 gnbbtn : 900;
 */
 
+/* swiper style */
+.swiper-button-next{
+  color : #ffe600;
+}
+.swiper-button-prev{
+  color : #ffe600;
+}
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #0e347e;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active{
+  background: #ffe600;
+  opacity: 1;
+}
+
+
 /* 상단으로 가기버튼 */
 .back_to_top{
   position: fixed;
-  width: 30px;
-  height: 30px;
-  right: 10px;
+  width: 60px;
+  height: 60px;
+  right: 40px;
   bottom: 10px;
   background:black;
+  background-image: url('../img/on.png');
   z-index: 900;
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
   /* 노출과 비노출 시 transition */
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
+}
+.back_to_top:hover{
+  background-image: url('../img/off.png');
 }
 .back_to_top a{
   width: 100%;
@@ -40,7 +62,7 @@ gnbbtn : 900;
   opacity: 1;
 }
 
-/* header area*/
+/* header area start */
 #header{
   position: fixed;
   width: 100%;
@@ -121,6 +143,15 @@ input[type=checkbox]#gnbcheck{ display: none; }
 #gnb ul li a:hover{
   background: #f3f3f3;
 }
+/* header area end */
+
+/* mainbanner #intro style */
+#intro{
+  padding-top: 60px;
+}
+#intro img{
+  width: 100%;
+}
 
 /* section start */
 /* section common style start */
@@ -187,23 +218,17 @@ section .row .column .inner img{
 }
 
 /* img shadow style */
-section .row .column .inner img.shadow{
-  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+section .row .column .inner img.border{
   box-sizing: border-box;
-  border: 1px solid #f1f1f1;
-  transition: 0.3s;
+  border: 1px solid #d1d1d1;
+  transition: 0.2s;
 }
 
-section .row .column .inner img.shadow:hover{
-  box-shadow: none;
+section .row .column .inner img.border:hover{
+  border : 1px solid #0e347e;
 }
 
 /* section별 style start */
-/* section#intro img */
-section#intro img{
-  width: 100%;
-}
-
 /* section#introduce */
 section#introduce{
   background: url('../img/about/bg-about.jpg') no-repeat center;
@@ -270,8 +295,6 @@ section#signature .column:hover img{
   opacity: 0.7;
 }
 
-
-
 /* section#icecream.active transition delay */
 section#icecream.active .row .column:nth-of-type(1){
   transition: 1s 0.25s
@@ -284,6 +307,18 @@ section#icecream.active .row .column:nth-of-type(3){
 }
 section#icecream.active .row .column:nth-of-type(4){
   transition: 1s 1s
+}
+section#icecream.active .row .column:nth-of-type(5){
+  transition: 1s 1.25s
+}
+section#icecream.active .row .column:nth-of-type(6){
+  transition: 1s 1.5s
+}
+section#icecream.active .row .column:nth-of-type(7){
+  transition: 1s 1.75s
+}
+section#icecream.active .row .column:nth-of-type(8){
+  transition: 1s 2s
 }
 /* section별 style end */
 

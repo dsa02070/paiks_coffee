@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/initial.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/common.js"></script>
+
   <!--[if lt IE 9]>
       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -24,10 +23,6 @@
   <!-- 상단으로 가기버튼 -->
   <div class="back_to_top">
     <a href="#intro">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff">
-        <path d="M0 0h24v24H0V0z" fill="none" />
-        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z" />
-      </svg>
     </a>
   </div>
   <!-- mobile menu button -->
@@ -58,11 +53,43 @@
   <!-- header area end -->
 
   <!-- mainbanner area start -->
-  <section id="intro">
-    <a href="#">
-      <img src="./img/main_banner/main_공공치빵.jpg" alt="banner_img1">
-    </a>
-  </section>
+  <div class="swiper-container" id="intro">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="./img/main_banner/main_공공치빵.jpg" alt="banner_img1">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="./img/main_banner/main_남도떡갈비샌드.jpg" alt="banner_img2">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="./img/main_banner/main_레드불꽃파워.jpg" alt="banner_img3">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="./img/main_banner/main_성주참외.jpg" alt="banner_img4">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="./img/main_banner/main_찰떡맛남.jpg" alt="banner_img5">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="./img/main_banner/main_퐁당치노.jpg" alt="banner_img6">
+        </a>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
   <!-- mainbanner area end -->
 
   <!-- section content area start -->
@@ -73,7 +100,7 @@
         <h2>빽다방 소개</h2>
         <div class="column">
           <div class="inner none_type">
-            <img src="./img/about/about1.png" alt="빽다방 로고" class="shadow">
+            <img src="./img/about/about1.png" alt="빽다방 로고" class="border">
             <h3>PAIK'S COFFEE</h3>
             <div class="subtitle">합리적인 가격, 놀라운 퀄리티의 커피전문점 "빽다방"입니다.</div>
             <p>수입부터 블렌딩/로스팅/신선도 유지까지 완벽한 원두, 원두와 함께 하는 높은 퀄리티의 식자재, 친구 같은 브랜드의 진정한 가치, 상생경영 이념 실현!<br>
@@ -136,56 +163,56 @@
         <h2>커피 메뉴</h2>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/03_앗메리카노_HOT.jpg" alt="coffee1" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/03_앗메리카노_HOT.jpg" alt="coffee1" class="border"></a>
             <h3>앗!메리카노(HOT)</h3>
             <p>빽다방만의 맛과 향을 더한 100% 아라비카 로스팅 원두로 뽑아내 깊고 진한 맛의 앗!메리카노</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/04_앗메리카노_ICED-1.jpg" alt="coffee2" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/04_앗메리카노_ICED-1.jpg" alt="coffee2" class="border"></a>
             <h3>앗!메리카노(ICED)</h3>
             <p>빽다방만의 맛과 향을 더한 100% 아라비카 로스팅 원두로 뽑아내 깊고 진한 맛의 앗!메리카노</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/05_원조커피_HOT.jpg" alt="coffee3" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/05_원조커피_HOT.jpg" alt="coffee3" class="border"></a>
             <h3>원조커피(HOT)</h3>
             <p>달콤한 빽다방 대표메뉴, 믹스커피 종결자!</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/10_빽스라떼_ICED.jpg" alt="coffee4" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/10_빽스라떼_ICED.jpg" alt="coffee4" class="border"></a>
             <h3>빡's 라떼(HOT)</h3>
             <p>진한 에스프레소와 우유가 어우려져 탄생한 부드러운 빽다방 라떼</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/13_바닐라라떼_ICED-1.jpg" alt="coffee5" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/13_바닐라라떼_ICED-1.jpg" alt="coffee5" class="border"></a>
             <h3>바닐라라떼(ICED)</h3>
             <p>부드러운 우유와 달콤하고 은은한 바닐라가 조화를 이루는 음료</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/14_카페모카_HOT.jpg" alt="coffee6" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/14_카페모카_HOT.jpg" alt="coffee6" class="border"></a>
             <h3>카페모카(HOT)</h3>
             <p>다크한 초콜렛과 진한 에스프레소, 부드러운 우유가 더해진 달콤한 맛의 커피</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/18_크리미모카라떼_HOT.jpg" alt="coffee7" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/18_크리미모카라떼_HOT.jpg" alt="coffee7" class="border"></a>
             <h3>크리미모카라떼(HOT)</h3>
             <p>깊고 진한 커피, 달콤한 초콜릿, 부드러운 크림의 환상 조합!</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/coffee_menu/달달연유라떼_아이스.jpg" alt="coffee8" class="shadow"></a>
+            <a href="#"><img src="./img/coffee_menu/달달연유라떼_아이스.jpg" alt="coffee8" class="border"></a>
             <h3>달달연유라떼(ICED)</h3>
             <p>달달하고 향긋한 베트남식 연유라떼</p>
           </div>
@@ -198,56 +225,56 @@
         <h2>음료 메뉴</h2>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/24_토피넛라떼_HOT.jpg" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/24_토피넛라떼_HOT.jpg" alt="drink1" class="border"></a>
             <h3>토피넛라떼(HOT)</h3>
             <p>견과류와 카라멜의 고소하고 달콤함이 느껴지는 부드럽고 진한 맛의 토피넛라떼(샷추가 +500원)</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/25_토피넛라떼_ICED.jpg" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/25_토피넛라떼_ICED.jpg" alt="drink2" class="border"></a>
             <h3>토피넛라떼(ICED)</h3>
             <p>견과류와 카라멜의 고소하고 달콤함이 느껴지는 부드럽고 진한 맛의 토피넛라떼(샷추가 +500원)</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/26_민트초코라떼_HOT.jpg" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/26_민트초코라떼_HOT.jpg" alt="drink3" class="border"></a>
             <h3>민트초코라떼(HOT)</h3>
             <p>초코칩으로 더한 깊은 초콜릿의 맛과 민트의 상쾌함이 어우러진 진한 민트초코라떼</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/27_민트초코라떼_ICED.jpg" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/27_민트초코라떼_ICED.jpg" alt="drink4" class="border"></a>
             <h3>민트초코라떼(ICED)</h3>
             <p>초코칩으로 더한 깊은 초콜릿의 맛과 민트의 상쾌함이 어우러진 진한 민트초코라떼</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/HOT-녹차라떼-450x588.png" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/HOT-녹차라떼-450x588.png" alt="drink5" class="border"></a>
             <h3>녹차라떼(HOT)</h3>
             <p>100% 국내산 녹차를 사용하여 진하고 부드러운 녹차라떼</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/ICED-녹차라떼-1-450x588.png" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/ICED-녹차라떼-1-450x588.png" alt="drink6" class="border"></a>
             <h3>녹차라떼(ICED)</h3>
             <p>100% 국내산 녹차를 사용하여 진하고 부드러운 녹차라떼</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/ICED-완전초코-450x588.png" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/ICED-완전초코-450x588.png" alt="drink7" class="border"></a>
             <h3>완전초코(HOT)</h3>
             <p>초코에 퐁당 빠지고 싶을때~!? 진짜~! 완~전 진한 초코라떼</p>
           </div>
         </div>
         <div class="column">
           <div class="inner none_type">
-            <a href="#"><img src="./img/drink_menu/피치우롱스위티_ICED.jpg" alt="drink1" class="shadow"></a>
+            <a href="#"><img src="./img/drink_menu/HOT-레몬얼그레이티-450x588.png" alt="drink8" class="border"></a>
             <h3>피치우롱스위티(ICED)</h3>
             <p>향긋하고 달콤한 복숭아와 풍부한 우롱의 맛이 어우러진 메뉴</p>
           </div>
@@ -444,14 +471,16 @@
     <div class="container">
       <!-- footer 하단 영역 -->
       <div class="coypyright">
-        ⓒcopryright <strong>mypage</strong> .All Rights Reserved.
+        ⓒcopryright <strong>THEBORN KOREA</strong> .All Rights Reserved.
       </div>
       <div class="credits">
-        Designed By <a href="mailto:mymail@naver.com">My Name</a>
+        Designed By <a href="mailto:mymail@naver.com">mr. PAIK</a>
       </div>
     </div>
   </footer>
   <!-- footer area end -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
 </body>
 
 </html>
