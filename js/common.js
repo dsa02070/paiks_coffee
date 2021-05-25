@@ -21,12 +21,16 @@ $(function () {
   let wHeight = $(window).innerHeight();
   $(window).scroll(function () {
     let thisScrollTop = $(this).scrollTop();
+    let thisOffset
     $("section").each(function () {
-      let thisOffset = $(this).offset();
+      thisOffset = $(this).offset();
       if (thisOffset.top <= thisScrollTop + addTop && thisScrollTop < thisOffset.top + wHeight) {
         $(this).addClass("active");
       }
     });
+    if (thisOffset.top <= thisScrollTop + addTop) {
+      $('.btn').addClass('active')
+    }
   });
 
   //main banner swiper 
@@ -35,8 +39,7 @@ $(function () {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
+      delay: 3000,
     },
     pagination: {
       el: ".swiper-pagination",

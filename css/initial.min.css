@@ -6,3 +6,4 @@ h1,h2,h3,h4,h5,h6{line-height:1}
 ul,ol,li{list-style:none}
 a{text-decoration:none;color:inherit;}
 img{vertical-align: top;}
+table{border-collapse: collapse;}
