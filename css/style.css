@@ -170,12 +170,10 @@ section:nth-child(odd){
 /* section.active interaction */
 section .row{
   opacity: 0;
-  transform: translateY(60px);
-  transition: 1s;
+  transition : 1s;
 }
 section.active .row{
   opacity: 1;
-  transform: translateY(0px);
 }
 /* section common style start end */
 
